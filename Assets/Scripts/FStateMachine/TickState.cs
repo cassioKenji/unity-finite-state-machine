@@ -8,6 +8,8 @@ namespace FStateMachine
 
         [SerializeField]
         public IPlayerState currentState;
+        public IPlayerState lastState;
+        public IPlayerState peekedState;
 
         void Start()
         {
@@ -22,7 +24,10 @@ namespace FStateMachine
 
         private void SetCurrentState()
         {
-            currentState = states.stack.Peek();
+            peekedState = states.stack.Peek();
+            
+            if (lastState == peekedState) return;
+            lastState = currentState = peekedState;
         }
     }
 }
