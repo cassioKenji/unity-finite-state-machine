@@ -21,11 +21,6 @@ namespace FStateMachine
             states = GetComponent<StateStack>();
         }
 
-        private void OnEnable()
-        {
-            
-        }
-
         public void SetState(IPlayerState state)
         {
             if (IsCurrentStateEqualsTo(state)) return;
