@@ -17,4 +17,4 @@ The project needs TextMesh Pro.
 - Remove all code for the state name pop up and add a better solution.
 
 ## Peek() every frame
-For demonstration purposes only. This is not the best approach check and run the current state's Tick method.
+For demonstration purposes only. This is not the best approach to check and run the current state's Tick method.
