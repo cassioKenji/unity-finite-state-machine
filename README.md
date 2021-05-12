@@ -1,6 +1,6 @@
 # unity-finite-state-machine
 
-A finite state machine using push and pop with a stack.
+A finite state machine using push and pop with a stack (inspired by the Pushdown automaton - https://en.wikipedia.org/wiki/Pushdown_automaton)
 
 ## Demo Scene
 Contains a game object with a state machine controlled by your keyboard.
